@@ -21,10 +21,4 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
 <script src="{{ $scratch.Get "baseURL" }}/js/highlight.js"></script>
 {{ end }}
 
-{{ if eq "true" .Site.Params.share.enabled }}
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
-<script type="text/javascript" src="{{ $scratch.Get "baseURL" }}/js/jssocials.js"></script>
-{{ end }}
-
 {{ .Scratch.Delete "baseURL" }}
